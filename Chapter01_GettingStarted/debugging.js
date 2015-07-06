@@ -3,10 +3,9 @@ var http = require("http");
 function process_request(req, res) {
   var body = 'Thanks for calling!\n';
   var content_length = body.lenggth;
-  res.writeHead(200, {
-    'Content-Length': content_length,
-    'Content-Type': 'test/plain'
-  });
+  res.writeHead(
+      200,
+      { 'Content-Length' : content_length, 'Content-Type' : 'test/plain' });
   res.end(body);
 }
 
